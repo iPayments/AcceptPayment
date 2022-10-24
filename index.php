@@ -7,4 +7,10 @@ $new_order = "INSERT INTO `ips_tbl_orders`(`order_id`, `status`, `order_for`, `a
 if(mysqli_query($connection, $new_order)){
 header("Location: https://secure-pay.i-payments.site/?orderID=$order_ID");
 }
+//You Can Use It Like Form POST
+/*Example :
+if(isset($_POST['parameter'])){
+//Code
+}
+*/
 ?>
