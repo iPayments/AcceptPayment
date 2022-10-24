@@ -44,7 +44,7 @@ $data = json_decode($response,true);
 $status = $data["Status"];
 if($status!="Success" || $status!="Pending"){
 $excep_error = $data["Message"];
-throw new Exception("$excep_error");
+//throw new Exception("$excep_error");
 return;
 }
 return "$status";
