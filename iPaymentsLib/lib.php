@@ -42,7 +42,7 @@ $response = curl_exec($curl);
 curl_close($curl);
 $data = json_decode($response,true);
 $status = $data["Status"];
-if($status!="Success" || $status!="Pending"){
+if($status!="Success"){
 $excep_error = $data["Message"];
 //throw new Exception("$excep_error");
 return;
